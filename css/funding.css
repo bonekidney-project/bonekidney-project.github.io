@@ -1,0 +1,74 @@
+.funding-strip{
+  background:#f2f2f2;
+  padding:50px 20px;
+  text-align:center;
+  border-top:1px solid #e0e0e0;
+}
+
+/* LOGOS */
+.funding-logos{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:60px;
+  margin-bottom:15px;
+}
+
+.funding-logos img{
+  height:50px;
+  width:auto;
+  object-fit:contain;
+  opacity:0.85;
+  transition:0.3s;
+}
+
+.funding-logos img:hover{
+  opacity:1;
+  transform:scale(1.08);
+}
+
+/* LABEL */
+.funding-label{
+  font-size:13px;
+  color:#888;
+  margin-bottom:12px;
+  letter-spacing:1px;
+}
+
+/* DETAILS (2 columns perfectly centered) */
+.funding-details{
+  display:grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content:center;
+
+  margin-top:10px;
+
+  font-size:14px;
+  color:#555;
+}
+
+/* LEFT COLUMN (FWF) */
+.funding-details p:first-child{
+  padding-right:300px;   /* push it left */
+  text-align:right;
+}
+
+/* RIGHT COLUMN (DFG) */
+.funding-details p:last-child{
+  padding-left:-600px;    /* push it right */
+  text-align:left;
+}
+
+.funding-details p{
+  margin:0;
+}
+
+.funding-details a{
+  color:#333;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.funding-details a:hover{
+  text-decoration:underline;
+}
